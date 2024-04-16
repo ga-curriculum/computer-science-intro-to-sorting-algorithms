@@ -8,6 +8,8 @@
 
 # What is Sorting?
 
+<p><a href="https://my.generalassemb.ly/software-engineering-immersive-7d-31878/software-engineering-immersive-class-work-3f70d8/units/algorithms/lessons/introduction-to-sorting-algorithms-329a02/activity/e1ac0ea8-2423-4d09-8ac7-b816fd80fa9e?wvideo=2ylrs7tfy7"><img src="https://embed-ssl.wistia.com/deliveries/1c92ada407c1842e1115405c459725e055ae5e73.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=017991e0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://my.generalassemb.ly/software-engineering-immersive-7d-31878/software-engineering-immersive-class-work-3f70d8/units/algorithms/lessons/introduction-to-sorting-algorithms-329a02/activity/e1ac0ea8-2423-4d09-8ac7-b816fd80fa9e?wvideo=2ylrs7tfy7">2 of 16 | Introduction to Sorting Algorithms | Algorithms | myGA</a></p>
+
 Sorting in computer science is no different than sorting in real life. It's putting an unordered collection of stuff, like this pile of Legos, and putting them into an ordered collection of stuff, like these Legos here.
 
 Sorting is the foundation for much more complex algorithms. Do you want to manage customer accounts on your e-commerce site? Search a database for information? Schedule computing jobs to minimize completion time? Behind all of these important processes is a solid sorting algorithm.
@@ -20,23 +22,25 @@ Each sort we'll cover has its advantages and disadvantages. It's important for u
 
 ## Types of Sorting: Comparison Sort
 
-There are two major types of sorting algorithms.
+There are two major types of sorting algorithms. The first we’ll cover is **comparison sort**. It does what it says on the tin: It compares two items and decides which one to put first.
 
-A comparison sort does what it says on the tin: it compares two items and decides which one to put first. If you're comparing numbers, use their values; if you're comparing words, use the alphabet; if you’re comparing Lego blocks, use their size, as below.
+If you’re comparing numbers, use their values. If you’re comparing words, use the alphabet. If you’re comparing Lego blocks, use their size, like below.
 
-tktk Hunter - (GIF)
+![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-sorting/comparison.gif)
 
 ## Types of Sorting: Distribution Sort
 
-Instead of comparing two items, distribution sort uses some property of the item itself to decide where it fits. Most of the time, this means dividing the items into groups based on some characteristic of the data itself. With our Lego blocks, this could mean grouping them by color.
+Instead of comparing two items, **distribution sort** uses some property of the item itself to decide where it fits. Most of the time, this means dividing the items into groups based on some characteristic of the data itself. With our Lego blocks, this could mean grouping them by color.
 
-tktk Hunter - (GIF)
+Comparison and distribution sort aren’t better or worse than one another. They simply function differently, which means that they’re better suited for different types of data sets.
 
-Comparison and distribution sort aren't better or worse than one another. They simply function differently, which means that they’re better suited for different types of datasets.
+![](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-sorting/distribution.gif)
 
 ## Knowledge Check
 
 It’s time to clean out your closet and donate some old clothes to a thrift store. The thrift purchases items based on the current time of year, so you’re sorting your clothes by season (winter, spring, summer, fall).
+
+![](assets/originals/2-Sorting-Clothes.png)
 
 What sorting method are you using here?
 
@@ -53,6 +57,8 @@ Correct answer: 2 - Distribution. In this instance, you’re grouping items into
 ---
 
 # Stability
+
+<p><a href="https://my.generalassemb.ly/software-engineering-immersive-7d-31878/software-engineering-immersive-class-work-3f70d8/units/algorithms/lessons/introduction-to-sorting-algorithms-329a02/activity/177a4598-0edb-4b11-92bd-7eb55d153fb3?wvideo=116t6c4vsc"><img src="https://embed-ssl.wistia.com/deliveries/cccdbe7f3cf054a7cb7866e116dfefd0691fd868.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=017991e0" width="400" height="225" style="width: 400px; height: 225px;"></a></p><p><a href="https://my.generalassemb.ly/software-engineering-immersive-7d-31878/software-engineering-immersive-class-work-3f70d8/units/algorithms/lessons/introduction-to-sorting-algorithms-329a02/activity/177a4598-0edb-4b11-92bd-7eb55d153fb3?wvideo=116t6c4vsc">6 of 16 | Introduction to Sorting Algorithms | Algorithms | myGA</a></p>
 
 Before we go too much further, let’s discuss one important characteristic of sorting: stability. Stability preserves the initial order of a collection. It allows you to sort by one factor and then by another, without the second sort screwing up the first one.
 
@@ -105,14 +111,44 @@ Correct answer: Unstable. When we sorted the second time, we lost the relationsh
 
 # Algorithms in Time and Space
 
-Remember Big O Notation? We can compare sorting algorithms using Big O.
+Remember Big O notation? We can compare sorting algorithms using Big O.
 
-Big O can be used to describe the time and space complexities of algorithms. In software development, Big O focuses on the efficiency of an algorithm as its input increases.
+With Big O, we can describe the time and space complexities of algorithms. Recall that, in software development, Big O focuses on the efficiency of an algorithm as its input increases:
 
-- **Time complexity** refers to the amount of time an algorithm takes to run.
-- **Space complexity** refers to the amount of memory or RAM an algorithm needs to run.
+* **Time complexity** refers to the amount of time an algorithm takes to run.
+* **Space complexity** refers to the amount of memory or RAM an algorithm needs to run.
 
-Both values look at the "worst case scenario" of these measures; that is, the maximum amount of time it could take for your algorithm to run, or the maximum amount of space it would require.
+Both values look at the “worst-case scenario” of these measures; that is, the maximum amount of time it could take for your algorithm to run or the maximum amount of space it would require.
+
+(Does it seem like we’ve been here before? You’re correct! But Big O is so important in terms of talking about algorithms that we’ll keep bringing it up.)
+
+## Looking at Time Complexity
+
+Big O is used to estimate how many calculations you will need to perform, described by the “worst-case scenario.”
+
+The `N` variable is the size of the input, or more plainly, the number of items being sorted. As we move from left to right across the table, we’re moving from very efficient runtimes like `O(1)` and `O(log(N))` to extremely inefficient runtimes like `O(N!)`. Stay away from the ones on the right!
+
+
+|                |      |         | Run Times |             |          |
+| -------------- | ---- | ------- | --------- | ----------- | -------- |
+| Input Size `(N)` | `O(1)` | `O(logN)` | `O(N)` | `O(N^2)` | `O(N!)` |
+| 1              | 1    | 1       | 1         | 1           | 1        |
+| 10             | 1    | 3       | 10        | 100         | 3628800  |
+| 40             | 1    | 5       | 40        | 1600        | 8.16e+47 |
+| 80             | 1    | 6       | 80        | 6400        | 80!      |
+| 600            | 1    | 9       | 600       | 360000      | 600!     |
+| 10000          | 1    | 13      | 10,000    | 100,000,000 | 10,000!  |
+
+## Looking at Space Complexity
+
+When we measure space complexity, we are measuring how much extra space our algorithm requires as a function of the input.
+
+Space complexity is described in one of two formats: **in place** or **out of place**.
+
+| Type         | Big O Complexity  | Description                                                                                   |
+| ------------ | ----------------- | --------------------------------------------------------------------------------------------- |
+| In place     | `O(1)` or `(Olog(N)` | The space the algorithm takes is predictable and does not depend on the size of the input.    |
+| Out of place | `O(N)` or `O(N^2)` | The algorithm uses an extra array, or more, into which to sort the values. |
 
 ## Knowledge Check
 
@@ -127,55 +163,32 @@ Time for a review! Of the four types listed below, which type of complexity is t
 <summary>Reveal the answer.
 </summary>
 <br>
-Correct answer: 4 - Quadratic. Quadratic complexity algorithms are the least efficient. If you have a dataset with N items, you’ll perform an operation N*N times. Not good!
+Correct answer: 4 - Quadratic. Quadratic complexity algorithms are the least efficient. If you have a dataset with N items, you’ll perform an operation N^N times. Not good!
 </details>
 
 ---
 
-## Looking at Time Complexity
-
-Big O is used as an estimate how many calculations you will need to perform, described by the “worst case scenario.”
-
-The variable n is the size of the input, or more plainly, the number of items being sorted.
-
-|                |      |         | Run Times |             |          |
-| -------------- | ---- | ------- | --------- | ----------- | -------- |
-| Input Size (n) | O(1) | O(logN) | O(N)      | O(N2)       | O(N!)    |
-| 1              | 1    | 1       | 1         | 1           | 1        |
-| 10             | 1    | 3       | 10        | 100         | 3628800  |
-| 40             | 1    | 5       | 40        | 1600        | 8.16e+47 |
-| 80             | 1    | 6       | 80        | 6400        | 80!      |
-| 600            | 1    | 9       | 600       | 360000      | 600!     |
-| 10000          | 1    | 13      | 10,000    | 100,000,000 | 10,000!  |
-
-As we move from left to right across the table, we’re moving from very efficient runtimes like O(1) and O(log n), to extremely inefficient runtimes like O(N!). Stay away from the ones on the right!
-
-## Looking at Space Complexity
-
-When we measure space complexity, we are measuring how much extra space our algorithm requires as a function of the input.
-
-Space complexity is usually described in one of two formats.
-
-| Type         | Big O Complexity  | Description                                                                                   |
-| ------------ | ----------------- | --------------------------------------------------------------------------------------------- |
-| In place     | O(1) or (Olog(N)) | The space the algorithm takes is predictable and does not depend on the size of the input.    |
-| Out of place | O(N)              | The algorithm uses an extra array, the same size as the input array, to sort the values into. |
-
 ## The Worst, the Best, and the Average
 
-If talking about things based on the worst case sounds pessimistic, don’t despair! While worst-case, Big O, is the more common way to compare algorithms, we also discuss their best and average cases, too!
+If talking about things based on the worst case sounds pessimistic, don’t despair! While worst case, Big O, is the most common way to compare algorithms, we also discuss their best and average cases, too!
 
-An algorithm’s best case performance is called "Big Omega". Big Omega describes how fast an algorithm would run if it performed the fewest possible actions on a dataset. If you were sorting an already sorted set, you'd get the Big Omega value.
+#### The Best Case
 
-An algorithm’s average case performance is called “Big Theta”. Big Theta describes the typical, average case runtime of an algorithm.
+An algorithm’s best-case performance is called its “Big Omega,” or `Ω` (that’s the Greek symbol for Omega). Big Omega describes how fast an algorithm would run if it performed the fewest possible actions on a data set. If you were sorting an already sorted set, you’d get the Big Omega value.
 
-tktk Hunter - (GRAPHIC)
+#### The Average Case
 
-Check out how different algorithms perform relative to each other on the next slide. No need to watch the entire video, but check out as much as you want in order to get a feel for the different speeds of these algorithms. (Warning: there's lots of moving colors and fast speeds. If this isn't your thing, check out this [simpler version](https://www.toptal.com/developers/sorting-algorithms).)
+An algorithm’s average-case performance is called its “Big Theta,” or `Θ` (another Greek symbol). Big Theta describes the typical runtime of an algorithm.
+
+![](assets/originals/1-Worst-Average-Best.png)
+
+Check out how different algorithms perform relative to one other in the next section. There’s no need to watch the entire video, but check out as much as you want in order to get a feel for the different algorithm speeds. 
+
+> (Warning: There are lots of moving colors and fast speeds in the video. If that isn't your thing, check out this [simpler version](https://www.toptal.com/developers/sorting-algorithms).)
 
 ## Time and Space, Visualized
 
-[Click to watch](https://www.youtube.com/watch?v=ZZuD6iUe3Pc)
+<iframe width="619" height="348" src="https://www.youtube.com/embed/ZZuD6iUe3Pc" title="Visualization and Comparison of Sorting Algorithms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Other Things to Consider
 
@@ -183,27 +196,30 @@ Understanding a sorting algorithm's time and space complexities helps us underst
 
 In addition to time and space complexity, there are a few other factors to think about when choosing a sort:
 
-- Stability (whether the items in the set stay in order)
-- Sorting method (comparison, distribution, or a combination of the two)
-- The size and structure your data is in (sorted, unsorted, very large, etc.)
+- **Stability** (whether the items in the set stay in order)
+- **Sorting method** (comparison, distribution, or a combination of the two)
+- The **size** and **structure** your data is in (sorted, unsorted, very large, etc.)
 
 # Okay, where's the cheatsheet?
 
-We gotcha.
+We’ve got you.
 
-You may not recognize all of these sorts, and that’s okay, because we’ll get to them soon. However, keep this comparison in mind as you learn about each of them in the lessons that follow. You can download this handout here (you know, to print, hang on your desk, and gaze at every day as you ponder the complexities of sorting algorithms).
+You may not recognize all of these sorts, and that’s OK, because we’ll get to them soon. However, keep these comparisons in mind as you learn about each of them in the lessons that follow.
 
 | Sort           | Best Case | Average Case | Worst Case | Space  | Stable | Type |
 | -------------- | --------- | ------------ | ---------- | ------ | ------ | ---- |
-| Bubble Sort    | Ω(n)      | Θ(n^2)       | O(n^2)     | O(1)   | Yes     | Comparison   |
-| Insertion Sort | Ω(n2)     | Θ(n^2)       | O(n^2)     | O(n)   | Yes     | Comparison   |
-| Bucket Sort    | Ω(n+k)    | Θ(n+k)       | O(n^2)     | O(n+k) | Yes     | Distribution   |
-| Merge Sort     | Ω(log(n)) | Θ(log(n))    | O(log(n))  | O(n)   | Yes     | Comparison   |
-| Quick Sort     | Ω(log(n)) | Θ(log(n))    | O(n^2)     | O(log(n)) | No     | Comparison |
+| Bubble Sort    | `Ω(N)`      | `Θ(N^2`)`    | `O(N^2)`     | `O(1)`   | Yes     | Comparison   |
+| Insertion Sort | `Ω(N)`     | `Θ(N^2)`       | `O(N^2)`     | `O(1)`   | Yes     | Comparison   |
+| Bucket Sort    | `Ω(N+K)`    | `Θ(N+K)`       | `O(N^2)`     | `O(N+K)` | Yes     | Distribution   |
+| Radix Sort     | `Ω(NK)` | `Θ(NK)`    | `O(NK)`  | `O(N+K)`   | Yes     | Distribution   |
+| Merge Sort     | `Ω(log(N))` | `Θ(log(N))`    | `O(log(N))`  | `O(N)`   | Yes     | Comparison   |
+| Quick Sort     | `Ω(log(N))` | `Θ(log(N))`    | `O(N^2)`     | `O(log(N))` | No     | Comparison |
 
 
-# The Perfect Sort Doesn't Exist
+# The Perfect Sort Doesn't Exi...
 
-Your next question might be, “Can't you just tell me which algorithm is the best and teach me that one?!”
+Your next question might be, “Can’t you just tell me which sorting algorithm is best and teach me that one?”
 
-Unfortunately, the perfect sort--the one sort to rule them all--doesn’t exist. While there are a few choice sorts you should get very familiar with, there isn't one "best" algorithm because different sorts are good at different things. Based on your needs for a specific situation, you'll want to consider time complexity, space complexity, stability, and the kind of mechanism the algorithm uses to sort. We’ll dive into all of that nex!
+Unfortunately, the perfect sort — the one sort to rule them all — doesn’t exist. While there are a few choice sorts you should get familiar with, there isn’t one “best” algorithm, because different sorts are good at different things.
+
+Based on your needs for a specific situation, you’ll want to consider time complexity, space complexity, stability, and the kind of mechanism the algorithm uses to sort.

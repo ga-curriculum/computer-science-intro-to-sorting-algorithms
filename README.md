@@ -10,7 +10,7 @@ In this lesson you'll be introduced to the concept of sorting in computer scienc
 
 ## Time to complete
 
-Estimated time to complete core lab exercise: **tktk min**
+Estimated time to complete core lab exercise: 1.5 hours
 
 
 ## Content
