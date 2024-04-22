@@ -2,42 +2,23 @@
 
 ## About
 
-tktk Write a short but descriptive summary of the content in this module. Introduce the lab. What will the students build in this lab?
+In this lesson you'll be introduced to the concept of sorting in computer science, including sorting methods, stability, and how Big O comes into play for sorting. You'll also learn two foundational sorting algorithms: bubble sort and insertion sort.
 
 ## Prerequisites
 
-- tktk
+- Big O Notation
 
 ## Time to complete
 
-Estimated time to complete core lab exercise: **tktk min**
+Estimated time to complete core lab exercise: 1.5 hours
 
-## Starter code
-
-tktk If there is not a starter code repo that students will fork and clone to start this lab, then this section and all of its content should be removed.
-
-🟢 [Starter code](#tktk-repository-for-starter-code)
 
 ## Content
 
 - [Setup](./setup/README.md)
-- [Exercise](./exercise/README.md)
+- [Exercise - Introduction to Sorting Algorithms](./exercise/intro-to-sorts/README.md)
+- [Exercise - Basic Sorting Algorithms](./exercise/basic-sorts/README.md)
 
-## Level Up
-
-🚀 [Level Up](./level-up/README.md) tktk - remove section if no level ups exist.
-
-## Solution code
-
-🏁 [tktk Solution code](#tktk-external-repo-link-url)
-
-## Deployed sites
-
-tktk If there is not a deployed site related to this module this section and all of its content should be removed.
-
-🌐 [Live site](#tktk-deployed-app-url)
-
-🐙 [Repository](#tktk-repository-for-deployed-app)
 
 ## Internal resources
 
