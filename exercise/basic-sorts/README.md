@@ -1,4 +1,4 @@
-# ![[tktk Module Name] - Exercise](./assets/hero.png)
+# ![Sorting Algorithms - Exercise](./assets/hero.png)
 
 **Learning Objectives:** By the end of this lesson, you will be able to:
 
@@ -170,8 +170,8 @@ Despite bubble sorts being virtually unusable, interviewers love to ask about th
 
 Luckily, the internet is full of fun visualizations on how sorting algorithms work! Check out a few:
 
-* This one from the [University of San Francisco](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html).
-* A similar visualization on YouTube: [bubble sort](https://www.youtube.com/watch?v=Cq7SMsQBEUw) and [insertion sort](https://www.youtube.com/watch?v=8oJS1BMKE64).
-Last but certainly not least: folk dancing for [bubble sort](https://www.youtube.com/watch?v=lyZQPjUT5B4&feature=youtu.be&t=53s) and [insertion sort](https://www.youtube.com/watch?v=ROalU379l3U).
+- This one from the [University of San Francisco](https://www.cs.usfca.edu/~galles/visualization/ComparisonSort.html).
+- A similar visualization on YouTube: [bubble sort](https://www.youtube.com/watch?v=Cq7SMsQBEUw) and [insertion sort](https://www.youtube.com/watch?v=8oJS1BMKE64).
+  Last but certainly not least: folk dancing for [bubble sort](https://www.youtube.com/watch?v=lyZQPjUT5B4&feature=youtu.be&t=53s) and [insertion sort](https://www.youtube.com/watch?v=ROalU379l3U).
 
 ![](assets/originals/interviews.png)
