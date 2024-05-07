@@ -76,25 +76,25 @@ Imagine that you're running a programming contest. Everyone competes to answer 1
 
 Here are the results sorted by time:
 
-```js
-programmers = [
-	{ solved: 8, minutes: 23 },
-	{ solved: 6, minutes: 27 },
-	{ solved: 2, minutes: 28 },
-	{ solved: 6, minutes: 35 },
-	{ solved: 6, minutes: 43 },
+```javascript
+let programmers = [
+  { solved: 8, minutes: 23 },
+  { solved: 6, minutes: 27 },
+  { solved: 2, minutes: 28 },
+  { solved: 6, minutes: 35 },
+  { solved: 6, minutes: 43 }
 ];
 ```
 
 You then created this sort to determine the second place winner:
 
-```js
-programmers = [
-	{ solved: 8, minutes: 23 },
-	{ solved: 6, minutes: 35 },
-	{ solved: 6, minutes: 27 },
-	{ solved: 6, minutes: 43 },
-	{ solved: 2, minutes: 28 },
+```javascript
+let programmers = [
+  { solved: 8, minutes: 23 },
+  { solved: 6, minutes: 35 },
+  { solved: 6, minutes: 27 },
+  { solved: 6, minutes: 43 },
+  { solved: 2, minutes: 28 }
 ];
 ```
 
@@ -115,8 +115,8 @@ Remember Big O notation? We can compare sorting algorithms using Big O.
 
 With Big O, we can describe the time and space complexities of algorithms. Recall that, in software development, Big O focuses on the efficiency of an algorithm as its input increases:
 
-* **Time complexity** refers to the amount of time an algorithm takes to run.
-* **Space complexity** refers to the amount of memory or RAM an algorithm needs to run.
+- **Time complexity** refers to the amount of time an algorithm takes to run.
+- **Space complexity** refers to the amount of memory or RAM an algorithm needs to run.
 
 Both values look at the “worst-case scenario” of these measures; that is, the maximum amount of time it could take for your algorithm to run or the maximum amount of space it would require.
 
@@ -128,16 +128,15 @@ Big O is used to estimate how many calculations you will need to perform, descri
 
 The `N` variable is the size of the input, or more plainly, the number of items being sorted. As we move from left to right across the table, we’re moving from very efficient runtimes like `O(1)` and `O(log(N))` to extremely inefficient runtimes like `O(N!)`. Stay away from the ones on the right!
 
-
-|                |      |         | Run Times |             |          |
-| -------------- | ---- | ------- | --------- | ----------- | -------- |
-| Input Size `(N)` | `O(1)` | `O(logN)` | `O(N)` | `O(N^2)` | `O(N!)` |
-| 1              | 1    | 1       | 1         | 1           | 1        |
-| 10             | 1    | 3       | 10        | 100         | 3628800  |
-| 40             | 1    | 5       | 40        | 1600        | 8.16e+47 |
-| 80             | 1    | 6       | 80        | 6400        | 80!      |
-| 600            | 1    | 9       | 600       | 360000      | 600!     |
-| 10000          | 1    | 13      | 10,000    | 100,000,000 | 10,000!  |
+|                  |        |           | Run Times |             |          |
+| ---------------- | ------ | --------- | --------- | ----------- | -------- |
+| Input Size `(N)` | `O(1)` | `O(logN)` | `O(N)`    | `O(N^2)`    | `O(N!)`  |
+| 1                | 1      | 1         | 1         | 1           | 1        |
+| 10               | 1      | 3         | 10        | 100         | 3628800  |
+| 40               | 1      | 5         | 40        | 1600        | 8.16e+47 |
+| 80               | 1      | 6         | 80        | 6400        | 80!      |
+| 600              | 1      | 9         | 600       | 360000      | 600!     |
+| 10000            | 1      | 13        | 10,000    | 100,000,000 | 10,000!  |
 
 ## Looking at Space Complexity
 
@@ -145,10 +144,10 @@ When we measure space complexity, we are measuring how much extra space our algo
 
 Space complexity is described in one of two formats: **in place** or **out of place**.
 
-| Type         | Big O Complexity  | Description                                                                                   |
-| ------------ | ----------------- | --------------------------------------------------------------------------------------------- |
-| In place     | `O(1)` or `(Olog(N)` | The space the algorithm takes is predictable and does not depend on the size of the input.    |
-| Out of place | `O(N)` or `O(N^2)` | The algorithm uses an extra array, or more, into which to sort the values. |
+| Type         | Big O Complexity     | Description                                                                                |
+| ------------ | -------------------- | ------------------------------------------------------------------------------------------ |
+| In place     | `O(1)` or `(Olog(N)` | The space the algorithm takes is predictable and does not depend on the size of the input. |
+| Out of place | `O(N)` or `O(N^2)`   | The algorithm uses an extra array, or more, into which to sort the values.                 |
 
 ## Knowledge Check
 
@@ -182,7 +181,7 @@ An algorithm’s average-case performance is called its “Big Theta,” or `Θ`
 
 ![](assets/originals/1-Worst-Average-Best.png)
 
-Check out how different algorithms perform relative to one other in the next section. There’s no need to watch the entire video, but check out as much as you want in order to get a feel for the different algorithm speeds. 
+Check out how different algorithms perform relative to one other in the next section. There’s no need to watch the entire video, but check out as much as you want in order to get a feel for the different algorithm speeds.
 
 > (Warning: There are lots of moving colors and fast speeds in the video. If that isn't your thing, check out this [simpler version](https://www.toptal.com/developers/sorting-algorithms).)
 
@@ -206,15 +205,14 @@ We’ve got you.
 
 You may not recognize all of these sorts, and that’s OK, because we’ll get to them soon. However, keep these comparisons in mind as you learn about each of them in the lessons that follow.
 
-| Sort           | Best Case | Average Case | Worst Case | Space  | Stable | Type |
-| -------------- | --------- | ------------ | ---------- | ------ | ------ | ---- |
-| Bubble Sort    | `Ω(N)`      | `Θ(N^2`)`    | `O(N^2)`     | `O(1)`   | Yes     | Comparison   |
-| Insertion Sort | `Ω(N)`     | `Θ(N^2)`       | `O(N^2)`     | `O(1)`   | Yes     | Comparison   |
-| Bucket Sort    | `Ω(N+K)`    | `Θ(N+K)`       | `O(N^2)`     | `O(N+K)` | Yes     | Distribution   |
-| Radix Sort     | `Ω(NK)` | `Θ(NK)`    | `O(NK)`  | `O(N+K)`   | Yes     | Distribution   |
-| Merge Sort     | `Ω(log(N))` | `Θ(log(N))`    | `O(log(N))`  | `O(N)`   | Yes     | Comparison   |
-| Quick Sort     | `Ω(log(N))` | `Θ(log(N))`    | `O(N^2)`     | `O(log(N))` | No     | Comparison |
-
+| Sort           | Best Case   | Average Case | Worst Case  | Space       | Stable | Type         |
+| -------------- | ----------- | ------------ | ----------- | ----------- | ------ | ------------ |
+| Bubble Sort    | `Ω(N)`      | `Θ(N^2`)`    | `O(N^2)`    | `O(1)`      | Yes    | Comparison   |
+| Insertion Sort | `Ω(N)`      | `Θ(N^2)`     | `O(N^2)`    | `O(1)`      | Yes    | Comparison   |
+| Bucket Sort    | `Ω(N+K)`    | `Θ(N+K)`     | `O(N^2)`    | `O(N+K)`    | Yes    | Distribution |
+| Radix Sort     | `Ω(NK)`     | `Θ(NK)`      | `O(NK)`     | `O(N+K)`    | Yes    | Distribution |
+| Merge Sort     | `Ω(log(N))` | `Θ(log(N))`  | `O(log(N))` | `O(N)`      | Yes    | Comparison   |
+| Quick Sort     | `Ω(log(N))` | `Θ(log(N))`  | `O(N^2)`    | `O(log(N))` | No     | Comparison   |
 
 # The Perfect Sort Doesn't Exi...
 

@@ -12,13 +12,11 @@ In this lesson you'll be introduced to the concept of sorting in computer scienc
 
 Estimated time to complete core lab exercise: 1.5 hours
 
-
 ## Content
 
 - [Setup](./setup/README.md)
 - [Exercise - Introduction to Sorting Algorithms](./exercise/intro-to-sorts/README.md)
 - [Exercise - Basic Sorting Algorithms](./exercise/basic-sorts/README.md)
-
 
 ## Internal resources
 
