@@ -1,4 +1,4 @@
-# ![Sorting Algorithms](./assets/tktk-hero.png)
+# ![Computer Science - Sorting Algorithms](./assets/hero.png)
 
 ## About
 

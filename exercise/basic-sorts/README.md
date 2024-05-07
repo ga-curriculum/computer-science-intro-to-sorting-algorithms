@@ -1,4 +1,4 @@
-# ![Sorting Algorithms - Exercise](./assets/hero.png)
+# ![Computer Science - Sorting Algorithms - Exercise](./assets/hero.png)
 
 **Learning Objectives:** By the end of this lesson, you will be able to:
 
