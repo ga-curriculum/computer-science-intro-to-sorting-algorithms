@@ -1,10 +1,4 @@
-# ![Computer Science - Sorting Algorithms - Exercise](./assets/hero.png)
-
-**Learning Objective:** By the end of this lesson, you will be able to
-
-- define two sorting methods and when you'd use each.
-- identify whether a sort is stable or unstable, and what impact that can have.
-- explain how Big O complexity applies to sorting algorithms.
+# ![Computer Science - Intro to Sorting Algorithms - Lesson](./assets/hero.png)
 
 # What is Sorting?
 
@@ -82,7 +76,7 @@ let programmers = [
   { solved: 6, minutes: 27 },
   { solved: 2, minutes: 28 },
   { solved: 6, minutes: 35 },
-  { solved: 6, minutes: 43 }
+  { solved: 6, minutes: 43 },
 ];
 ```
 
@@ -94,7 +88,7 @@ let programmers = [
   { solved: 6, minutes: 35 },
   { solved: 6, minutes: 27 },
   { solved: 6, minutes: 43 },
-  { solved: 2, minutes: 28 }
+  { solved: 2, minutes: 28 },
 ];
 ```
 
