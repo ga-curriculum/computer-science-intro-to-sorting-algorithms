@@ -1,12 +1,12 @@
 # ![Computer Science - Intro to Sorting Algorithms - Exercise](./assets/hero.png)
 
-Before we get into any code, let's try sorting a deck of cards by hand.
+# Activity: Sorting Cards
 
-## Activity: Sorting Cards
+Before we get into any code, let's try sorting a deck of cards by hand.
 
 Acquire a set of playing cards. You'll be sorting these cards using different methods to understand sorting algorithms better.
 
-### Bubble Sort
+## Bubble Sort
 
 1. **Shuffle and Prepare the Deck**: Lay 20 cards out in a line on a table.
 
@@ -23,7 +23,7 @@ Acquire a set of playing cards. You'll be sorting these cards using different me
 Feel free to choose your card order. For example, numerical (as in poker), aces always low, reverse order, or using Pinochle ordering: [9, J, Q, K, 10, A].
 
 
-### Reflection Questions
+### Reflection Questions for Bubble Sort
 
 After completing the Bubble Sort, reflect on the following questions:
 
