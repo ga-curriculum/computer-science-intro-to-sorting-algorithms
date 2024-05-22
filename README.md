@@ -21,7 +21,7 @@ By the end of this module, learners will be able to:
 There are two components to this module:
 
 1. Lesson: [Intro to Sorting Algorithms](./lesson/README.md)
-2. Exercise: [My First Sort](./exercise/README.md)
+2. Exercise: [My First Sorts](./exercise/README.md)
 
 ### Time to Complete
 
