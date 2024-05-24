@@ -199,7 +199,7 @@ Check out how different algorithms perform relative to one other in the next sec
 
 ## Time and Space, Visualized
 
-<iframe width="619" height="348" src="https://www.youtube.com/embed/ZZuD6iUe3Pc" title="Visualization and Comparison of Sorting Algorithms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Visualization and Comparison of Sorting Algorithms](https://img.youtube.com/vi/ZZuD6iUe3Pc/0.jpg)](https://www.youtube.com/watch?v=ZZuD6iUe3Pc)
 
 ## Other Considerations
 
