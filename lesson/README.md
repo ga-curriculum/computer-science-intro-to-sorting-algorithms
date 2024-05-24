@@ -2,7 +2,7 @@
 
 ## What is Sorting?
 
-<a href="https://generalassembly.wistia.com/medias/2ylrs7tfy7?wvideo=2ylrs7tfy7" target="_parent"><img src="https://embed-ssl.wistia.com/deliveries/1c92ada407c1842e1115405c459725e055ae5e73.jpg?image_crop_resized=900x506&image_play_button=true&image_play_button_size=2x&image_play_button_color=222222e0" alt=" Intro to Sorting" width="450" height="253" /></a>
+<a href="https://generalassembly.wistia.com/medias/2ylrs7tfy7?wvideo=2ylrs7tfy7"><img src="https://embed-ssl.wistia.com/deliveries/1c92ada407c1842e1115405c459725e055ae5e73.jpg?image_crop_resized=900x506&image_play_button=true&image_play_button_size=2x&image_play_button_color=222222e0" alt=" Intro to Sorting" width="450" height="253" /></a>
 
 _Transcript_
 
