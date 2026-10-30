@@ -22,7 +22,7 @@ There are two major types of sorting algorithms. The first we’ll cover is **co
 
 If you’re comparing numbers, use their values. If you’re comparing words, use the alphabet. If you’re comparing Lego blocks, use their size, like below.
 
-![Comparison Sort](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-sorting/comparison.gif)
+![Comparison Sort](https://ga-curriculum.github.io/universal-resources-internal/static/lesson-assets/tech/computer-science/intro-sorting/comparison.gif)
 
 ## Types of Sorting: Distribution Sort
 
@@ -30,7 +30,7 @@ Instead of comparing two items, **distribution sort** uses some property of the 
 
 Comparison and distribution sort aren’t better or worse than one another. They simply function differently, which means that they’re better suited for different types of data sets.
 
-![Distribution Sort](https://ga-instruction.s3.amazonaws.com/assets/tech/computer-science/intro-sorting/distribution.gif)
+![Distribution Sort](https://ga-curriculum.github.io/universal-resources-internal/static/lesson-assets/tech/computer-science/intro-sorting/distribution.gif)
 
 ### Knowledge Check
 
